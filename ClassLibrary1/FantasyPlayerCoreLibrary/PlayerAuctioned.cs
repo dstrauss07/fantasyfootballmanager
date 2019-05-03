@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace StraussDa.FantasyPlayerCoreLibrary
+{
+    public class PlayerAuctioned
+    {
+        public int PlayerAuctionedId {get; set;}
+        public int WinningBid { get; set; }
+
+
+        //navigation properties for EF
+        public int PlayerId { get; set; }
+        public Player Player { get; set; }
+    }
+}
