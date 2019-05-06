@@ -12,6 +12,10 @@ namespace StraussDa.FantasyPlayerCoreLibrary
         public int TeamSize { get; set; }
         public int StartingBudget { get; set; }
         public int RemainingBudget { get; set; }
-        public List<PlayerAuctioned> AuctionedPlayers { get; set; }
+        public List<PlayerAuctioned> PlayersAuctioned { get; set; }
+
+        //Navigation Properties - EF
+        public int TestUserProfileId { get; set; }
+        public TestUserProfile TestUserProfie { get; set; }
     }
 }

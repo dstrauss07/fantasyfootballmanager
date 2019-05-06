@@ -14,5 +14,7 @@ namespace StraussDa.FantasyPlayerCoreLibrary
         //navigation properties for EF
         public int PlayerId { get; set; }
         public Player Player { get; set; }
+        public int DraftTeamId { get; set; }
+        public DraftTeam DraftTeam { get; set; }
     }
 }

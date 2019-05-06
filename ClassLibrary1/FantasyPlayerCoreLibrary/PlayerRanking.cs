@@ -18,9 +18,12 @@ namespace StraussDa.FantasyPlayerCoreLibrary
         public decimal SflexValue { get; set; }
         public int PlayerRiskLevel { get; set; }
 
-        //navigation properties for EF
+        //Navigation Properties - EF
         public int PlayerId { get; set; }
         public Player Player { get; set; }
+
+        public int TestUserProfileId { get; set; }
+        public TestUserProfile TestUserProfie { get; set; }
 
     }
 }
